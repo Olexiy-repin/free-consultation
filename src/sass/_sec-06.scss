@@ -1,0 +1,322 @@
+.sec-06 {
+  padding-top: 1.9rem;
+  padding-bottom: 3rem;
+  .container--width {
+    display: flex;
+    flex-direction: column;
+  }
+  .row:first-of-type {
+    order: 2;
+  }
+  .row:last-of-type {
+    order: 1;
+    margin-bottom: 2.9rem;
+  }
+}
+
+.sec-06__title {
+  font-family: AcromEB;
+  font-size: pxToRem(20px);
+  line-height: 1.4;
+  padding: 0 1.9rem;
+  letter-spacing: -0.8px;
+  order: 0;
+  padding: 0;
+  width: 78%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.sec-06__award-card-title {
+  font-family: AcromEB;
+  font-size: pxToRem(18px);
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding-right: 3.6rem;
+  margin-bottom: .7rem;
+}
+
+.sec-06__award-card-text {
+  font-family: AcromR;
+  font-size: pxToRem(14px);
+  line-height: 1.5;
+  span {
+    font-family: AcromEB;
+  }
+}
+
+.sec-06__awards-container {
+  padding-top: 2.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: pxToRem(224px);
+  width: 76%;
+  margin: auto;
+  counter-reset: list1;
+  &::before {
+    display: block;
+    content: "[ Награды ]";
+    font-family: AcromEB;
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.sec-06__award-card {
+  box-shadow: 0 0 32px 0 rgba(0,0,0,.3);
+  margin-bottom: 3.7rem;
+  padding: 2.6rem 0 1.7rem 0;
+  position: relative;
+  background-color: #fff;
+  &::before {
+    display: block;
+    counter-increment: list1;
+    content: "0" counter(list1);
+    position: absolute;
+    right: 0;
+    top: -3.2rem;
+    font-family: MontserB;
+    font-size: pxToRem(70px);
+    opacity: .1;
+    z-index: -1;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.sec-06__award-card-text-container {
+  margin-bottom: .9rem;
+  padding: 0 1rem;
+}
+
+.sec-06__award-card-img {
+  display: block;
+  margin: auto;
+}
+
+.sec-06__tender-partners-container {
+  padding-top: 0;
+  width: 78%;
+  margin: auto;
+  background-image: url("img/sec-06/tender.png");
+  background-position: top;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.sec-06__tender {
+  padding-top: 3.1rem;
+  position: relative;
+  margin-bottom: 2.5rem;
+  &::before {
+    display: block;
+    content: "[ Go for IT ]";
+    font-family: AcromEB;
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    left: .3rem;
+  }
+}
+
+.sec-06__tender-title {
+  font-family: AcromEB;
+  font-size: pxToRem(24px);
+  line-height: 1.3;
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+}
+
+.sec-06__tender-text {
+  font-family: AcromR;
+  font-size: pxToRem(14px);
+  color: #6b6f7a;
+  line-height: 1.5;
+}
+
+.sec-06__partners {
+  padding-top: 3rem;
+  position: relative;
+  &::before {
+    display: block;
+    content: "[ Партнеры ]";
+    font-family: AcromEB;
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    left: .3rem;
+  }
+}
+
+.sec-06__partner-img {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .sec-06 {
+    padding-top: 2.9rem;
+    padding-bottom: 3.1rem;
+  }
+
+  .sec-06 .row:last-of-type {
+    margin-bottom: 3.7rem;
+  }
+
+  .sec-06__title {
+    font-size: pxToRem(30px);
+    width: 85%;
+    margin-bottom: 1.5rem;
+  }
+
+  .sec-06__awards-container {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 3.7rem;
+    &::before {
+      left: 3.3rem;
+    }
+  }
+
+  .sec-06__award-card {
+    width: 32%;
+    height: 29rem;
+    margin-bottom: 0;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sec-06__awards-container {
+    width: 97%;
+  }
+
+  .sec-06__award-card-text-container {
+    padding:  0 1.2rem;
+  }
+
+  .sec-06__award-card-img {
+    margin: auto auto 0 auto;
+  }
+
+  .sec-06__tender {
+    width: 49%;
+    margin: auto;
+    margin-bottom: 2.5rem;
+    background-image: url("img/sec-06/tender.png");
+    background-position: top right;
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+  }
+
+  .sec-06__tender-partners-container {
+    width: auto;
+    background-image: none;
+  }
+
+  .sec-06__partners {
+    width: 85%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sec-06 {
+    padding-top: 5.5rem;
+    padding-bottom: 5.2rem;
+    .container-fluid {
+      padding: 0 3.4rem;
+    }
+  }
+  .sec-06 .row:first-of-type {
+    order: 1;
+    margin-bottom: 2.1rem;
+  }
+
+  .sec-06__awards-container {
+    width: auto;
+    padding-top: 3.2rem;
+  }
+
+  .sec-06__awards-container::before {
+    left: 0;
+  }
+
+  .sec-06__tender-partners-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sec-06__award-card {
+    display: flex;
+    flex-direction: row;
+    box-shadow: none;
+    height: auto;
+    padding: 0;
+    &:nth-of-type(3) {
+      .sec-06__award-card-text-container {
+        width: 60%;
+      }
+    }
+    &:nth-of-type(2) {
+      .sec-06__award-card-text-container {
+        width: 58%;
+      }
+    }
+  }
+
+  .sec-06__title {
+    font-size: pxToRem(48px);
+    width: auto;
+    margin: 0;
+    line-height: 1.3;
+    letter-spacing: -1.8px;
+    padding-right: 30rem;
+    margin-bottom: 4rem;
+    br {
+      display: none;
+    }
+  }
+
+  .sec-06__tender {
+    margin: 0;
+    width: 31%;
+  }
+
+  .sec-06__partners {
+    margin: 0;
+    width: 57%;
+  }
+
+  .sec-06__award-card-title {
+    font-size: pxToRem(24px);
+    line-height: 1.3;
+    padding-right: 2.6rem;
+  }
+
+  .sec-06__award-card-img {
+    margin: 0;
+    align-self: baseline;
+  }
+
+  .sec-06__award-card-text-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .sec-06__award-card::before {
+    font-size: pxToRem(30px);
+    transform: rotate(-90deg);
+    right: 0;
+    top: -3.8rem;
+  }
+}

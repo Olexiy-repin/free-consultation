@@ -1,0 +1,335 @@
+.main {
+  .row {
+    [class*=col-]:first-of-type {
+      margin-bottom: 1rem;
+    }
+    [class*=col-] {
+      padding: 0 29px;
+    }
+  }
+}
+
+.main__text-under-title {
+  font-family: AcromR;
+  font-size: pxToRem(14px);
+  color: #fff;
+  margin-bottom: 1.1rem;
+  letter-spacing: -.5px;
+}
+
+.main__title {
+  font-family: AcromEB;
+  font-size: pxToRem(20px);
+  color: #00eaff;
+  margin-bottom: .8rem;
+  letter-spacing: -.9px;
+  line-height: 1.3;
+}
+
+.main__bottom-text {
+  font-family: AcromM;
+  font-size: pxToRem(14px);
+  color: #fff;
+  line-height: 1.4;
+  margin-bottom: 1.2rem;
+}
+
+.main__price-container {
+  color: #e2aa23;
+  font-family: AcromB;
+}
+
+.main__price-text {
+  font-family: AcromB;
+  font-size: pxToRem(14px);
+  letter-spacing: -.6px;
+}
+
+.main__new-price {
+  font-family: AcromEB;
+  font-size: pxToRem(20px);
+  letter-spacing: -.8px;
+}
+
+/*----------FORM----------*/
+.main__form {
+  background-color: #fff;
+  padding: .9rem 0;
+  padding-bottom: 1.7rem;
+  box-shadow: 0 12px 70px 0 rgba(121, 139, 188, .5);
+}
+
+.main__form__title {
+  font-family: AcromEB;
+  font-size: 1rem;
+  line-height: 1.2;
+  margin-bottom: .7rem;
+  padding: 0 1.3rem;
+}
+
+.main__form__subtitle {
+  font-family: AcromR;
+  font-size: pxToRem(14px);
+  line-height: 1.4;
+  margin-bottom: .6rem;
+  padding: 0 1.3rem;
+  letter-spacing: -.9px;
+}
+
+.main__form-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.4rem;
+}
+
+.main__form-input {
+  display: block;
+  border: none;
+  outline: 1px solid #000;
+  padding: .7rem 0;
+  width: 100%;
+  margin-bottom: .8rem;
+  font-family: AcromM;
+  font-size: pxToRem(14px);
+  padding-left: .5rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  &::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease;}
+  &::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease;}
+  &:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease;}
+  &:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease;}
+  &:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
+  &:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
+  &:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
+  &:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}
+}
+
+.submit-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+
+.main__form-btn {
+  display: inline-block;
+  width: 13.6375rem;
+  background-color: #ff702a;
+  padding: .6rem 0;
+  border: none;
+  outline: none;
+  font-family: AcromB;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  &:hover {
+    transition: all .5s linear;
+    box-shadow: 0 0 43px 0 rgba(255,107,8,.6);
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding-top: .2rem;
+    padding-bottom: 0;
+    .row [class*=col-]:first-of-type {
+      margin-bottom: 1.2rem;
+    }
+    .row [class*=col-] {
+      padding: 0 71px;
+    }
+  }
+  .main__text-under-title {
+    padding: 0 .2rem;
+    padding-right: 6rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .main__title {
+    font-size: pxToRem(40px);
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    letter-spacing: -1.8px;
+  }
+
+  .main__bottom-text {
+    font-size: pxToRem(18px);
+    line-height: 1.6;
+    margin-bottom: 1.4rem;
+  }
+
+  .main__price-text {
+    font-size: pxToRem(18px);
+    margin-bottom: 0;
+  }
+
+  .main__new-price {
+    font-size: pxToRem(40px);
+    letter-spacing: -1.6px;
+  }
+
+  /*----------FORM----------*/
+
+  .form-container {
+    width: 38.8rem;
+    margin: auto;
+  }
+
+  .main__form {
+    padding: 1.8rem 0;
+    padding-bottom: 4.5rem;
+    padding-bottom: 2.6rem;
+  }
+
+  .main__form__title {
+    font-size: pxToRem(24px);
+    margin-bottom: 1.1rem;
+    text-align: center;
+    padding: 0 7.6rem;
+    letter-spacing: 0;
+  }
+
+  .main__form__subtitle {
+    font-size: pxToRem(13px);
+    text-align: center;
+    padding: 0 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0;
+  }
+
+  .main__form-input-container {
+    padding: 0 4.9rem;
+  }
+
+  .main__form-input {
+    padding:  .5rem 0;
+    padding-left: .9rem;
+    margin-bottom: .9rem;
+    font-size: pxToRem(18px);
+    color: #a2a2a2;
+  }
+
+  .submit-wrap {
+    margin-top: 1.7rem;
+  }
+
+  .main__form-btn {
+    width: 29.2rem;
+    padding: .6rem 0;
+    font-size: pxToRem(16px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .main {
+    padding-top: 2.3rem;
+    padding-bottom: 0;
+    .row [class*=col-] {
+      padding: 0 15px;
+    }
+  }
+  .main__text-under-title {
+    padding: 0;
+    text-align: left;
+    font-size: pxToRem(20px);
+    letter-spacing: -.6px;
+    margin-bottom: 2.2rem;
+    line-height: pxToRem(30px);
+    padding-left: 2.7rem;
+  }
+
+  .main__title {
+    font-size: pxToRem(60px);
+    text-align: left;
+    letter-spacing: -3px;
+    line-height: 1.2;
+    margin-bottom: 2.2rem;
+    padding-left: 2.5rem;
+
+  }
+
+  .main__bottom-text {
+    padding: 0;
+    text-align: left;
+    line-height: 1.3;
+    margin-bottom: 2.6rem;
+    font-size: pxToRem(35px);
+    padding-left: 2.7rem;
+  }
+
+  .main__price-container {
+    text-align: left;
+    padding-left: 2.5rem;
+  }
+
+  .main__price-text {
+    font-size: pxToRem(28px);
+    letter-spacing: -.5px;
+    margin-bottom: 1.1rem;
+  }
+
+  .main__new-price {
+    font-size: pxToRem(55px);
+    letter-spacing: -2.1px;
+    margin-bottom: -.5rem;
+  }
+
+  /*----------FORM----------*/
+
+  .form-container {
+    padding-top: .8rem;
+    width: 28.7rem;
+    margin: 0;
+    margin-left: 2.5rem;
+  }
+
+  .main__form {
+    padding: 2.2rem 0;
+    padding-bottom: 3.1rem;
+  }
+
+  .main__form__title {
+    font-size: pxToRem(35px);
+    text-align: left;
+    padding: 0;
+    padding-left: 2.1rem;
+    letter-spacing: 0;
+    margin-bottom: 1.5rem;
+    br {
+      display: none;
+    }
+  }
+
+  .main__form__subtitle {
+    font-size: pxToRem(18px);
+    text-align: left;
+    padding: 0 2rem;
+    line-height: 1.45;
+    letter-spacing: 0;
+    margin-bottom: 1.9rem;
+  }
+
+  .main__form-input {
+    font-size: pxToRem(25px);
+    padding: .85rem 0;
+    margin-bottom: 2.5rem;
+    padding-left: .8rem;
+  }
+
+  .submit-wrap {
+    margin-top: 2.4rem;
+  }
+
+  .main__form-btn {
+    font-size: pxToRem(22px);
+    padding: 1rem 0;
+    width: 24.5rem;
+  }
+
+  .main__form-input-container {
+    padding: 0 2.2rem;
+  }
+}
